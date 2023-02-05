@@ -41,3 +41,11 @@ Then Eu não devo receber email com compravante do pedido
 And Aparece a mensagem de erro no pagamento
 
 And O sistema solicita o pagamento novamente
+
+
+Scenario 4: Email inválido
+Given Estou logado como "cliente"
+And Estou na página de concluir o pagamento
+And O email é inválido
+When o sistema verifica o email
+Then Aparece a mensagem de email inválido
