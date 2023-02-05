@@ -49,3 +49,8 @@ And Estou na página de concluir o pagamento
 And O email é inválido
 When o sistema verifica o email
 Then Aparece a mensagem de email inválido
+
+Scenario 5: Cenario de desenvolvimento
+Given
+When
+Then
