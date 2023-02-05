@@ -39,3 +39,8 @@ When O sistema verifica o pagamento
 Then Eu não devo receber email com compravante do pedido
 
 And Aparece a mensagem de erro no pagamento
+
+Scenario 4: Cenario de desenvolvimento
+Given
+When
+Then
