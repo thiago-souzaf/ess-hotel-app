@@ -1,34 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { RouterModule }   from '@angular/router';
-import { HttpModule } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CarsComponent } from './cars/cars.component';
-import { CarService } from './cars/cars.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ListaAtracoesPageComponent } from './pages/lista-atracoes-page/lista-atracoes-page.component';
+import { AtracaoPageComponent } from './pages/atracao-page/atracao-page.component';
+import { DescontosPageComponent } from './pages/descontos-page/descontos-page.component';
+import { SobrePageComponent } from './pages/sobre-page/sobre-page.component';
+import { PerfilPageComponent } from './pages/perfil-page/perfil-page.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { UserEvaluationComponent } from './components/user-evaluation/user-evaluation.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    CarsComponent
-  ],
+  declarations: [AppComponent, NavbarComponent, HomePageComponent, ListaAtracoesPageComponent, AtracaoPageComponent, DescontosPageComponent, SobrePageComponent, PerfilPageComponent, NotFoundPageComponent, UserEvaluationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpModule,
-    RouterModule.forRoot([
-      {
-        path: 'cars',
-        component: CarsComponent
-      }
-    ])
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
-  providers: [CarService],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

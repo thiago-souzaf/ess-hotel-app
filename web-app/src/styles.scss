@@ -1,0 +1,13 @@
+@font-face{
+  font-family: NATS;
+  src: url(assets/Fonts/NATS-Regular.ttf);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: NATS, Roboto, "Helvetica Neue", sans-serif;
+}
