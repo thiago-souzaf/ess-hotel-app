@@ -6,9 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ListaAtracoesPageComponent } from './pages/lista-atracoes-page/lista-atracoes-page.component';
+import { AtracaoPageComponent } from './pages/atracao-page/atracao-page.component';
+import { DescontosPageComponent } from './pages/descontos-page/descontos-page.component';
+import { SobrePageComponent } from './pages/sobre-page/sobre-page.component';
+import { PerfilPageComponent } from './pages/perfil-page/perfil-page.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [AppComponent, NavbarComponent, HomePageComponent, ListaAtracoesPageComponent, AtracaoPageComponent, DescontosPageComponent, SobrePageComponent, PerfilPageComponent, NotFoundPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
