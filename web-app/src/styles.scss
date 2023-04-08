@@ -1,10 +1,20 @@
-@import "scss/components/am-components/am-navbar";
+@use "@angular/material" as mat;
+
+@font-face {
+  font-family: "NATS-Regular";
+  src: url(assets/fonts/NATS-Regular.ttf);
+}
+
+$my-custom-typography: mat.define-typography-config(
+  $font-family: "NATS-Regular",
+);
 
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "NATS-Regular";
 }
