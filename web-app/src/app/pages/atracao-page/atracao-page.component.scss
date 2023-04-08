@@ -2,6 +2,7 @@
   width: 100vw;
   max-width: 1140px;
   padding-top: 120px;
+  padding-bottom: 50px;
   margin: auto;
 }
 
@@ -53,7 +54,26 @@
     border-radius: 8px;
     border: 2px solid #ced0d4;
     padding: 12px;
+
+    .info-and-icon {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+    }
   }
+}
+
+.see-reviews {
+  text-align: center;
+  cursor: pointer;
+  color: #006ce4;
 }
 
 h1 {
