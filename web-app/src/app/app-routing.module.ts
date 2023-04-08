@@ -7,6 +7,7 @@ import { ListaAtracoesPageComponent } from './pages/lista-atracoes-page/lista-at
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { PerfilPageComponent } from './pages/perfil-page/perfil-page.component';
 import { SobrePageComponent } from './pages/sobre-page/sobre-page.component';
+import { DescontosPageExtendedComponent } from './pages/descontos-page-extended/descontos-page-extended.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'descontos',
     component: DescontosPageComponent,
+  },
+  {
+    path: 'extendido',
+    component: DescontosPageExtendedComponent
   },
   {
     path: 'sobre',
