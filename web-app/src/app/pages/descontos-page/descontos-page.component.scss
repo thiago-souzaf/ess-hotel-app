@@ -55,12 +55,6 @@
 }
 
 
-
-
-
-
-
-/* Rectangle 51 */
 #retangulo_51 {
   position: absolute;
   width: 15%;
@@ -93,5 +87,44 @@
 html {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.containergeral{
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 50px;
+  margin-right: 37px;
+
+}
+.card-img-top {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 5px;
+  
+}
+
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+
+.btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ff001e;
+  border-color: #ff0000;
+}
+.card1 {
+  
+  top: 5%;
+  width: 50%;
+  height: 50%;
+}
+.card2{
+  
+  width: 50%;
+  height: 30%;
 }
 
