@@ -55,11 +55,36 @@
           </div>
           <div class="atracoes-tickets">
             <h1>Ingressos</h1>
-            <p>Ingresso Único</p>
-            <p>R$ {{ currentAtracao.ticketPrice }}</p>
+            <div class="ticket-info">
+              <div>
+                <p>Ingresso Único</p>
+                <p>R$ {{ currentAtracao.ticketPrice }}</p>
+              </div>
+              <div class="tickets-controller">
+                <button
+                  class="decrease-button"
+                  [disabled]="tickets == 0"
+                  (click)="decreaseTickets()"
+                >
+                  -
+                </button>
+                <div>{{ tickets }}</div>
+                <button
+                  class="increase-button"
+                  [disabled]="tickets == 99"
+                  (click)="increaseTickets()"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
             <div class="price-total" *ngIf="tickets > 0">
-              <p>Total</p>
-              <h1>R$ {{ currentAtracao.ticketPrice * tickets }}</h1>
+              <div class="price-text">
+                <p>Total</p>
+                <h1>R$ {{ currentAtracao.ticketPrice * tickets }}</h1>
+              </div>
+              <button (click)="buyTickets()">Comprar</button>
             </div>
           </div>
         </div>

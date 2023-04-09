@@ -30,14 +30,20 @@ export class AtracaoPageComponent {
     ticketPrice: 202.33,
   };
 
-  tickets: number = 3;
+  tickets: number = 0;
 
   increaseTickets(): void {
+    if (this.tickets == 99) return;
     this.tickets++;
   }
 
   decreaseTickets(): void {
+    if (this.tickets == 0) return;
     this.tickets--;
+  }
+
+  buyTickets(): void {
+    console.log(this.tickets);
   }
 
   isDrawbarVisible: boolean = false;
