@@ -4,8 +4,14 @@
     <span>{{ atracoes.length }} atrações disponíveis</span>
     <div class="diviser"></div>
     <div class="cards-container">
-      <div class="atracao-card" *ngFor="let atracao of atracoes">
-        <img src="{{ atracao.images[0].url }}" />
+      <div
+        class="atracao-card"
+        *ngFor="let atracao of atracoes"
+        [routerLink]="['/atracoes', atracao.id]"
+      >
+        <div class="image-container">
+          <img src="{{ atracao.images[0].url }}" />
+        </div>
         <div class="atracao-info">
           <h1>{{ atracao.name }}</h1>
           <span>{{ atracao.title }}</span>
