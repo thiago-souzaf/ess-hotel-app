@@ -1,1 +1,33 @@
-<p>lista-atracoes-page works!</p>
+<div class="list-container">
+  <div class="list-content">
+    <h1>Atrações Accomodare</h1>
+    <span>{{ atracoes.length }} atrações disponíveis</span>
+    <div class="diviser"></div>
+    <div class="cards-container">
+      <div class="atracao-card" *ngFor="let atracao of atracoes">
+        <img src="{{ atracao.images[0].url }}" />
+        <div class="atracao-info">
+          <h1>{{ atracao.name }}</h1>
+          <span>{{ atracao.title }}</span>
+          <div class="atracao-details">
+            <div class="info-and-icon">
+              <img src="assets/images/Hour-Icon.svg" />
+              <div class="text-container">
+                <p>{{ atracao.day }}</p>
+                <p>{{ atracao.hour }}</p>
+              </div>
+            </div>
+            <div class="info-and-icon">
+              <img
+                src="assets/images/Like-Icon.svg"
+                height="20px"
+                width="20px"
+              />
+              <p>90% curtiram isso de acordo com 42 avaliações</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
