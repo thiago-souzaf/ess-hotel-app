@@ -1,0 +1,63 @@
+* {
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    padding-top: 140px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.box .info {
+    width: 30%;
+    align-items: center;
+}
+
+.box .info .valor {
+    display: flex;
+    align-items: baseline;
+    margin-top: 50px;
+}
+
+.box .info .valor #texto_total {
+    width: fit-content;
+    margin-right: 35%;
+}
+
+.box .info .valor #texto_moeda {
+    width: fit-content;
+    margin: 2%;
+}
+
+.box .info .valor #texto_valor {
+    width: fit-content;
+}
+
+.box .info .linha {
+    border-bottom: 2px solid #ced0d4;
+    width: 88%;
+}
+
+.box .info #texto_metodos {
+    margin-top: 12px;
+}
+
+h1, h2, p{
+    font-family: "NATS-Regular";
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+
+h1{
+    font-size: 44px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 23px;
+}
