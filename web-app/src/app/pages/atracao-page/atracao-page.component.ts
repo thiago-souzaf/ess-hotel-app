@@ -27,7 +27,18 @@ export class AtracaoPageComponent {
     location: 'Hotel Accomodare',
     day: 'Segunda, 13 de Abril de 2023',
     hour: 'Início: 07:00',
+    ticketPrice: 202.33,
   };
+
+  tickets: number = 3;
+
+  increaseTickets(): void {
+    this.tickets++;
+  }
+
+  decreaseTickets(): void {
+    this.tickets--;
+  }
 
   isDrawbarVisible: boolean = false;
 

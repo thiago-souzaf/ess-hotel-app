@@ -12,6 +12,7 @@ export class Atracao {
   location!: string;
   day!: string;
   hour!: string;
+  ticketPrice!: number;
 
   constructor(
     id: string,
@@ -21,7 +22,8 @@ export class Atracao {
     descriptions: string[],
     location: string,
     day: string,
-    hour: string
+    hour: string,
+    ticketPrice: number
   ) {
     this.id = id;
     this.name = name;
@@ -31,5 +33,6 @@ export class Atracao {
     this.location = location;
     this.day = day;
     this.hour = hour;
+    this.ticketPrice = ticketPrice;
   }
 }

@@ -22,6 +22,15 @@
         <div class="atracoes-first-column">
           <h1>{{ currentAtracao.name }}</h1>
           <span>{{ currentAtracao.title }}</span>
+          <div class="reviews">
+            <img src="assets/images/Like-Icon.svg" height="20px" width="20px" />
+            <div class="reviews-text">
+              <p>90% curtiram isso de acordo com 42 avaliações</p>
+              <p class="see-reviews" (click)="openDrawbar()">
+                Ver todas as Avaliações
+              </p>
+            </div>
+          </div>
           <div class="diviser"></div>
           <p *ngFor="let description of currentAtracao.descriptions">
             {{ description }}
@@ -39,24 +48,19 @@
             </div>
             <div class="info-and-icon">
               <img src="assets/images/Location-Icon.svg" />
-              <p>
-                {{ currentAtracao.location }}
-              </p>
+              <div class="text-container">
+                <p>Local de Partida: {{ currentAtracao.location }}</p>
+              </div>
             </div>
           </div>
-          <div class="atracoes-review">
-            <h1>Avaliações</h1>
-            <div class="info-and-icon">
-              <img
-                src="assets/images/Like-Icon.svg"
-                height="20px"
-                width="20px"
-              />
-              <p>90% curtiram isso de acordo com 42 avaliações</p>
+          <div class="atracoes-tickets">
+            <h1>Ingressos</h1>
+            <p>Ingresso Único</p>
+            <p>R$ {{ currentAtracao.ticketPrice }}</p>
+            <div class="price-total" *ngIf="tickets > 0">
+              <p>Total</p>
+              <h1>R$ {{ currentAtracao.ticketPrice * tickets }}</h1>
             </div>
-            <p class="see-reviews" (click)="openDrawbar()">
-              Ver todas as Avaliações
-            </p>
           </div>
         </div>
       </div>
