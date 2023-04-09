@@ -1,12 +1,12 @@
 * {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .box {
     padding-top: 140px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%;
+    display: flex;
 }
 
 .box .info {
@@ -36,11 +36,67 @@
 
 .box .info .linha {
     border-bottom: 2px solid #ced0d4;
-    width: 88%;
+    width: 100%;
+}
+
+.box .linha2 {
+    border: 1px solid #000000;
+    max-height: 100%;
+    margin: 0 15%;
 }
 
 .box .info #texto_metodos {
     margin-top: 12px;
+}
+
+.box .info .metodos .cartao {
+    border: 1px solid #ced0d4;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px;
+}
+
+.box .info .metodos .cartao .botao {
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #b7b8bb;
+    width: 100%;
+    margin: 10% 10%;
+    background-color: rgb(18, 165, 209);
+}
+
+.box .info .metodos .pix .botao {
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #b7b8bb;
+    width: 100%;
+    margin: 5.5% 10%;
+}
+
+.box .info .metodos {
+    align-items: center;
+}
+
+.box .info .metodos .pix {
+    border: 1px solid #ced0d4;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    margin: 2px;
+}
+
+#image_cartao{
+    width: 70%;
+    width: 70%;
+    border-radius: 8%;
+    margin: auto 0;
+}
+
+#image_pix{
+    width: 70%;
+    width: 70%;
+    border-radius: 8%;
+    margin: auto 0;
 }
 
 h1, h2, p{
