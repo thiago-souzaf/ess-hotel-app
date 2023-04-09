@@ -32,14 +32,25 @@ export class AtracaoPageComponent {
 
   tickets: number = 0;
 
+  totalPrice: number = 0;
+
+  updateTotalPrice(): void {
+    this.totalPrice =
+      Math.round(this.tickets * this.currentAtracao.ticketPrice * 100) / 100;
+  }
+
   increaseTickets(): void {
     if (this.tickets == 99) return;
     this.tickets++;
+
+    this.updateTotalPrice();
   }
 
   decreaseTickets(): void {
     if (this.tickets == 0) return;
     this.tickets--;
+
+    this.updateTotalPrice();
   }
 
   buyTickets(): void {
