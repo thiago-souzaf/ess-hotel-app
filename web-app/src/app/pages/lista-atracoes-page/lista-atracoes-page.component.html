@@ -26,6 +26,15 @@
               <p>90% curtiram isso de acordo com 42 avaliações</p>
             </div>
           </div>
+          <div class="price-and-button">
+            <div class="price-container">
+              <p>A partir de</p>
+              <h2>R$ {{ atracao.ticketPrice }}</h2>
+            </div>
+            <button [routerLink]="['/atracoes', atracao.id]">
+              Ver Atração
+            </button>
+          </div>
         </div>
       </div>
     </div>
