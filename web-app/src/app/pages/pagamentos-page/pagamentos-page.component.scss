@@ -51,6 +51,7 @@
 
 .box .info .metodos .cartao {
     border: 1px solid #ced0d4;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -81,11 +82,44 @@
 
 .box .info .metodos .pix {
     border: 1px solid #ced0d4;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     background-color: white;
     margin: 2px;
+}
+
+.nome_cartao{
+    border: 1px solid #b7b8bb;
+    border-radius: 8px;
+    height: 40px;
+    margin: 3px;
+}
+
+.numero_cartao{
+    border: 1px solid #b7b8bb;
+    border-radius: 8px;
+    height: 40px;
+    margin: 3px;
+}
+
+.cvc_cartao{
+    border: 1px solid #b7b8bb;
+    border-radius: 8px;
+    height: 40px;
+    margin: 3px;
+}
+
+.data_validade{
+    border: 1px solid #b7b8bb;
+    border-radius: 8px;
+    height: 40px;
+    margin: 3px;
+}
+
+.carta {
+    display: flex;
 }
 
 #image_cartao{
