@@ -17,6 +17,7 @@ import { UserEvaluationComponent } from './components/user-evaluation/user-evalu
 import { DescontosPageExtendedComponent } from './pages/descontos-page-extended/descontos-page-extended.component';
 import { HotelCardComponent } from './components/hotel-card/hotel-card.component';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { PagamentosPageComponent } from './pages/pagamentos-page/pagamentos-page.component';
 
 @NgModule({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
@@ -33,6 +34,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     UserEvaluationComponent,
     DescontosPageExtendedComponent,
     HotelCardComponent,
+    PagamentosPageComponent,
   ],
   imports: [
     BrowserModule,
