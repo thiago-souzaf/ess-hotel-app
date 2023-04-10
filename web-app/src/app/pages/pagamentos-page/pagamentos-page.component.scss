@@ -4,7 +4,7 @@
 }
 
 .box {
-    padding-top: 140px;
+    padding-top: 15%;
     margin: 0 10%;
     display: flex;
 }
@@ -52,25 +52,27 @@
 .box .info .metodos .cartao {
     border: 1px solid #ced0d4;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     margin: 2px;
 }
 
-.box .info .metodos .cartao .botao {
+.botao {
     border: 1px solid;
     border-radius: 50%;
     border-color: #b7b8bb;
-    width: 100%;
-    margin: 10% 10%;
-    background-color: rgb(18, 165, 209);
+    height: 35px;
+    width: 35px;
+    margin: 5.5% 10%;
 }
 
-.box .info .metodos .pix .botao {
-    border: 1px solid;
-    border-radius: 50%;
-    border-color: #b7b8bb;
-    width: 100%;
-    margin: 5.5% 10%;
+.botao:hover {
+    background-color: #135fc4;
+}
+  
+.botao:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #094faa;
 }
 
 .box .info .metodos {
@@ -80,6 +82,7 @@
 .box .info .metodos .pix {
     border: 1px solid #ced0d4;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     background-color: white;
     margin: 2px;
