@@ -4,8 +4,14 @@
     <span>{{ atracoes.length }} atrações disponíveis</span>
     <div class="diviser"></div>
     <div class="cards-container">
-      <div class="atracao-card" *ngFor="let atracao of atracoes">
-        <img src="{{ atracao.images[0].url }}" />
+      <div
+        class="atracao-card"
+        *ngFor="let atracao of atracoes"
+        [routerLink]="['/atracoes', atracao.id]"
+      >
+        <div class="image-container">
+          <img src="{{ atracao.images[0].url }}" />
+        </div>
         <div class="atracao-info">
           <h1>{{ atracao.name }}</h1>
           <span>{{ atracao.title }}</span>
@@ -25,6 +31,15 @@
               />
               <p>90% curtiram isso de acordo com 42 avaliações</p>
             </div>
+          </div>
+          <div class="price-and-button">
+            <div class="price-container">
+              <p>A partir de</p>
+              <h2>R$ {{ atracao.ticketPrice }}</h2>
+            </div>
+            <button [routerLink]="['/atracoes', atracao.id]">
+              Ver Atração
+            </button>
           </div>
         </div>
       </div>
