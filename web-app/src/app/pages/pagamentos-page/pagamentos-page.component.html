@@ -10,23 +10,36 @@
         <p id="texto_metodos">Escolha seu Método de Pagamento</p>
         <div class="metodos">
             <div class="cartao">
-                <button class="botao"></button>
+                <button (click)="getCard()" class="botao"></button>
                 <img id="image_cartao" src="../../../assets/images/bandeiras-de-cartao-de-credito-o-que-sao-e-quais-as-principais-no-brasil.jpg" alt="Bandeiras dos cartões">
             </div>
             <div class="pix">
-                <button class="botao"></button>
+                <button (click)="getPix()" class="botao"></button>
                 <img id="image_pix" src="../../../assets/images/pix_boleto.jpg" alt="">
             </div>
         </div>
     </div>
     <div class="linha2"></div>
     <div class="dados">
-        <h2>Dados do Cartão</h2>
-        <div class="nome"></div>
-        <div class="carta">
-            <div class="numero_cartao"></div>
-            <div class="codigo"></div>
+        <div *ngIf="isCard" class="cartao">
+            <h2>Dados do Cartão</h2>
+            <div class="nome">
+                <input type="text" id="campo_texo" name="nome" class="nome_cartao" placeholder="Nome Completo" size="30" maxlength="50">
+            </div>
+            <div class="carta">              
+                <input type="text" id="campo_texo" name="numero" class="numero_cartao" placeholder="Número do Cartão" size="16" maxlength="16">
+                <div class="codigo">
+                    <input type="text" id="campo_texo" name="cvc" class="cvc_cartao" placeholder="CVC" size="3" maxlength="3">
+                </div>
+            </div>
+            <div class="data">
+                <input type="date" id="campo_texo" name="data" class="data_validade" placeholder="" size="30" maxlength="50">
+            </div>
         </div>
-        <div class="data"></div>
+        <div *ngIf="!isCard" class="pix_boleto">
+            <div class="data">
+                <h2>PIX ou Boleto</h2>
+            </div>
+        </div>     
     </div>
 </div>
