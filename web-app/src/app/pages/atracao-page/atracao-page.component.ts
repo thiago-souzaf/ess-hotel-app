@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Atracao } from './atracao';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-atracao-page',
   templateUrl: './atracao-page.component.html',
   styleUrls: ['./atracao-page.component.scss'],
 })
-export class AtracaoPageComponent {
+export class AtracaoPageComponent implements OnInit {
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      let id = params.get('atracaoId');
+      console.log(id);
+    });
+  }
+
   currentAtracao: Atracao = {
     id: '11a24b90',
     name: 'Passeio de 1 dia com almoço em Angra dos Reis',
