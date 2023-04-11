@@ -15,4 +15,14 @@ getCard():void {
 getPix():void {
   this.isCard=false;
 }
+
+popupAberto: boolean = false;
+
+  abrirPopup(){
+    this.popupAberto = true
+  }
+
+  fecharPopup(){
+    this.popupAberto = false
+  }
 }

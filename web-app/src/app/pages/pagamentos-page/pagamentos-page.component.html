@@ -40,6 +40,20 @@
             <div class="data">
                 <h2>PIX ou Boleto</h2>
             </div>
-        </div>     
+        </div>
+        <button (click)="abrirPopup()" id="confirmarPagamento">Confirmar pagamento</button>     
+    </div>
+    
+
+</div>
+
+<div class="popup-container" *ngIf="popupAberto">
+    <div class="popup">
+        <h2>PAGAMENTO EFETUADO</h2>
+        <h3>Seu pagamento foi efetuado com sucesso!</h3>
+        <p>Em breve enviaremos o comprovante de reserva para o seu email cadastrado.</p>
+        <p>Obrigado por escolher o Accomodare Hotel, e boa estadia!</p>
+
+        <button (click)="fecharPopup()" id="fecharPopup">Fechar</button>
     </div>
 </div>
